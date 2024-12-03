@@ -55,6 +55,34 @@ main {
 
 h1 {
     text-align: center;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+.section_index {
+    font-size: 20px;
+    width: 80%;
+    max-width: 600px;
+    background: #e4eaf1;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+#index_side {
+    width: 80%;
+    max-width:150px;
+    font-size: 22px;
+    font-weight: 600;
+    background: #a4c7f0;
+    color: aliceblue;
+    padding: 80px 100px;
+    border-radius: 100%;
+    position: relative;
+    top: -65px;
+    right: -55vw;
 }
 
 .news_article {
@@ -67,9 +95,10 @@ h1 {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     background: #6ca0db;
     width: 100%;
     text-align: center;
+    height: 150px;
 }
