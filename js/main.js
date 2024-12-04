@@ -8,14 +8,15 @@ const products = document.querySelectorAll(".product");
 categoryLinks.forEach(link =>{
     link.addEventListener("click", (e) => {
         e.preventDefault();//förhindrar standardlänk-klick
-        const category = e.target.textContent.toLowerCase();//Hämtar kategorin från länken
+
+        const category = e.target.dataset.category;//Hämtar kategorin från länken
 
         //Visa/Dölja produkter
         products.forEach(product => {
-            if (category==="Alla" || product.CDATA_SECTION_NODE.category ===category) {
-                product.computedStyleMap.display = "block";//Visar matchande produkter
+            if (category==="alla" || product.dataset.category === category) {
+                product.style.display = "block";//Visar matchande produkter
             } else {
-                product.computedStyleMap.display = "none";//Döljer resten
+                product.style.display = "none";//Döljer resten
             }
         });
     });
