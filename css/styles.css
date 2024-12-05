@@ -307,3 +307,78 @@ footer {
     color: #fff;
 }
 
+@media screen and (max-width: 800px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        height: 300px;
+    }
+
+    /*Navigeringen*/
+    .main_nav a {
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+    .main_nav a:hover {
+        background-color: #374249;
+        text-decoration: underline;
+    }
+
+    /*Startsidan*/
+    .index_content {
+        grid-template-columns: 1fr;
+    }
+
+    .section_index {
+        font-size: 16px;
+    }
+
+    .section_index h2 {
+        font-size: 24px;
+    }
+
+    .right_column {
+        margin-top: 0px;
+        border-left: none;
+        padding-left: 20px;
+    }
+
+    /*Produktsidan*/
+    .sidebar ul li a {
+        font-size: 16px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Om Oss sidan*/
+    .info_saltafisken {
+        font-size: 16px;
+    }
+
+    .info_contact {
+        font-size: 16px;
+    }
+
+    .staff {
+        padding-bottom: 30px;
+    }
+
+    .info_form h4 {
+        font-size: 20px;
+    }
+
+    .info_form label {
+        font-size: 18px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+}
