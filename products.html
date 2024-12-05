@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js" defer ></script>
+    <script src="js/main.js" defer></script>
     <title>Saltafisken | Produkter</title>
 </head>
 
 <body>
     <div class="container">
         <header>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
             <img src="images/butterfly-fish-3454404_1920.jpg"
                 alt="header bild, chromis viridis fiskar och en rostratum i ett rev" class="header_image">
             <nav class="main_nav">
+
                 <ul>
                     <li><a href="index.html">Startsidan</a></li>
                     <li><a href="products.html">Produkter</a></li>
@@ -24,10 +26,13 @@
             </nav>
         </header>
         <main>
+
             <h1>Produkter</h1>
             <p class="info_prod">Allt levande finns i butiken. Skickas ej.</p>
+
             <div class="product_grid">
 
+                <!-- Vertikal meny med kategorier på vänstersida -->
                 <aside class="sidebar">
                     <h2>Kategorier:</h2>
                     <ul>
@@ -38,35 +43,39 @@
                     </ul>
                 </aside>
 
+                <!-- Alla produkter -->
                 <section class="products">
 
                     <div class="product" data-category="fish">
-                        <img src="images/leucosternon.jpg" alt="helbild på vitbröstad kirurgfisk">
+                        <img src="images/leucosternon.jpg" alt="helbild på vitbröstad kirurgfisk" loading="lazy">
                         <h3>Vitbröstad kirurgfisk</h3>
-                        <p>Acanthurus leucosternon</p>                        
+                        <p>Acanthurus leucosternon</p>
                     </div>
                     <div class="product" data-category="fish">
-                        <img src="images/splendidus.jpg" alt="helbild på mandarinfisk med vackert mönster">
+                        <img src="images/splendidus.jpg" alt="helbild på mandarinfisk med vackert mönster"
+                            loading="lazy">
                         <h3>Mandarinfisk</h3>
                         <p>Synchiropus splendidus</p>
                     </div>
                     <div class="product" data-category="fish">
-                        <img src="images/flavescens.jpg" alt="svart kirurgfisk med orangea fenor med vita detaljer">
+                        <img src="images/flavescens.jpg" alt="svart kirurgfisk med orangea fenor med vita detaljer"
+                            loading="lazy">
                         <h3>Gul kirurgfisk</h3>
                         <p>zebrasoma flavescens</p>
                     </div>
                     <div class="product" data-category="fish">
-                        <img src="images/rostratus.jpg" alt="mettalic blå/grön fisk">
+                        <img src="images/rostratus.jpg" alt="mettalic blå/grön fisk" loading="lazy">
                         <h3>Kopparbandad fjärilsfisk</h3>
                         <p>Chelmon rostratus</p>
                     </div>
                     <div class="product" data-category="fish">
-                        <img src="images/hepatus.jpg" alt="Blå fisk med gul stjärtfena">
+                        <img src="images/hepatus.jpg" alt="Blå fisk med gul stjärtfena" loading="lazy">
                         <h3>Palettkirurg</h3>
                         <p>Paracanthurus hepatus</p>
                     </div>
                     <div class="product" data-category="fish">
-                        <img src="images/ocellaris.jpg" alt="orange fisk med vita breda vertikala ränder">
+                        <img src="images/ocellaris.jpg" alt="orange fisk med vita breda vertikala ränder"
+                            loading="lazy">
                         <h3>Clownfisk</h3>
                         <p>Amphiprion ocellaris</p>
                     </div>
@@ -90,13 +99,13 @@
                         <h3>Putsräka</h3>
                         <p>Lysmata amboinensis</p>
                     </div>
-
                 </section>
             </div>
         </main>
         <footer>
             <p>&copy; 2024 Saltafisken<br>
-                Bilder från <a href="https://pixabay.com/sv//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3454404">Pixabay</a>
+                Bilder från <a
+                    href="https://pixabay.com/sv//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3454404">Pixabay</a>
             </p>
         </footer>
     </div>

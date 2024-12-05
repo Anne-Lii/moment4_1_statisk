@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+    <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Saltafisken | Om oss</title>
 </head>
@@ -13,9 +13,11 @@
 <body>
     <div class="container">
         <header>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
             <img src="images/butterfly-fish-3454404_1920.jpg"
                 alt="header bild, chromis viridis fiskar och en rostratum i ett rev" class="header_image">
             <nav class="main_nav">
+
                 <ul>
                     <li><a href="index.html">Startsidan</a></li>
                     <li><a href="products.html">Produkter</a></li>
@@ -27,9 +29,10 @@
         <main>
             <h1>Om oss</h1>
 
-            <section class="section_about">
+            <div class="section_about">
 
-                <section class="info_saltafisken">
+                <!-- Info om företaget -->
+                <div class="info_saltafisken">
                     <p>
                         Saltafisken grundades med en enkel vision: att föra undervattensvärldens skönhet till hem och
                         offentliga
@@ -38,9 +41,10 @@
                         showroom
                         som visar akvarier i världsklass.
                     </p>
-                </section>
+                </div>
 
-                <section class="info_contact">
+                <!-- Kontaktuppgifter -->
+                <div class="info_contact">
                     <h2>Kontakt</h2>
                     <p>
                         Adress: Storgatan 23, 465 37 Jönköping<br>
@@ -48,9 +52,10 @@
                         E-post: info@saltafisken.se<br>
                         Webbplats: www.saltafisken.se<br>
                     </p>
-                </section>
+                </div>
 
-                <section class="info_staff">
+                <!-- Personalen -->
+                <div class="info_staff">
                     <div class="staff">
                         <img src="images/annelii.jpg" alt="">
                         <h3>Anne-Lii Hansen</h3>
@@ -68,8 +73,9 @@
 
                         </p>
                     </div>
-                </section>
+                </div>
 
+                <!-- Formulär för kontakt -->
                 <section class="info_form">
                     <h4>Eller skriv till oss här:</h4>
                     <form>
@@ -83,11 +89,12 @@
                     </form>
                 </section>
 
-            </section>
+            </div>
         </main>
         <footer>
             <p>&copy; 2024 Saltafisken<br>
-                Bilder från <a href="https://pixabay.com/sv//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3454404">Pixabay</a>
+                Bilder från <a
+                    href="https://pixabay.com/sv//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3454404">Pixabay</a>
             </p>
         </footer>
     </div>

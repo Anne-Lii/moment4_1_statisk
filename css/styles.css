@@ -1,9 +1,17 @@
-body {
+body,
+html {
     font-family: Arial, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100%;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 header {
@@ -13,6 +21,8 @@ header {
     position: relative;
     height: 400px;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .header_image {
@@ -32,7 +42,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1;
 }
 
 .main_nav {
@@ -47,7 +57,6 @@ header {
     list-style: none;
     display: flex;
     padding: 0;
-
 }
 
 .main_nav a {
@@ -63,8 +72,20 @@ header {
     text-decoration: underline;
 }
 
+/*Burgermeny*/
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*Main*/
 main {
-    padding: 20px 20px 200px 20px;
+    flex: 1;
+    margin-bottom: 150px;
 }
 
 h1 {
@@ -98,14 +119,13 @@ h2 {
 
 .section_index h2 {
     font-size: 28px;
-
 }
 
 .section_index img {
     width: 95%;
     height: 100%;
     object-fit: cover;
-    background-color: fff;
+    background-color: #fff;
     box-shadow: 10px 10px 10px grey;
     border-radius: 5px;
 }
@@ -194,15 +214,15 @@ h2 {
 }
 
 .product img {
-    width: 100%;
-    height: 60%;
+    width: 98%;
+    height: 200px;
     object-fit: cover;
     background-color: #2e4f74;
     padding: 2px;
     box-shadow: 10px 10px 10px grey;
     border-radius: 5px;
+    margin: 0;
 }
-
 
 /*Om Oss sidan*/
 .section_about {
@@ -244,7 +264,6 @@ h2 {
 .fa-envelope {
     color: #555;
     margin-right: 5px;
-
 }
 
 .info_form {
@@ -297,14 +316,10 @@ h2 {
 
 /*Footer*/
 footer {
-    position: relative;
-    bottom: 0px;
     background: #6ca0db;
-    width: 100%;
     text-align: center;
-    height: 150px;
-    padding-top: 30px;
     color: #fff;
+    padding: 20px 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -317,6 +332,12 @@ footer {
         height: 300px;
     }
 
+    h1 {
+        font-size: 24px;
+        padding: 50px 0px 10px 0px;
+        margin: 0;
+    }
+
     /*Navigeringen*/
     .main_nav a {
         padding: 15px 10px;
@@ -324,13 +345,15 @@ footer {
     }
 
     .main_nav a:hover {
-        background-color: #374249;
+        background-color: #5d87b8;
         text-decoration: underline;
     }
 
     /*Startsidan*/
     .index_content {
         grid-template-columns: 1fr;
+        width: 95%;
+        margin: auto;
     }
 
     .section_index {
@@ -359,10 +382,16 @@ footer {
     /*Om Oss sidan*/
     .info_saltafisken {
         font-size: 16px;
+        width: 90%;
     }
 
     .info_contact {
         font-size: 16px;
+    }
+
+    .info_contact p {
+        padding-left: 50px;
+        padding-bottom: 50px;
     }
 
     .staff {
@@ -380,5 +409,122 @@ footer {
     footer {
         height: auto;
         padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*Burgermenyn*/
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .main_nav ul {
+        display: none;
+    }
+
+    .main_nav ul li {
+        text-align: center;
+        margin: 10px 0;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .main_nav ul li:hover {
+        background-color: #5d87b8;
+        text-decoration: underline;
+        padding: 15px 0;
+    }
+
+    .main_nav a {
+        padding: 15px 100px;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .main_nav ul.active {
+        display: flex;
+        flex-direction: column;
+        background: #6ca0db;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 999;
+        padding: 50px 0;
+        overflow-y: auto;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    /*Produktsidan*/
+    .product_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        height: 300px;
+    }
+
+    .sidebar {
+        padding: 0px;
+    }
+
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+    .sidebar ul li {
+        margin: 5px 0;
+    }
+
+    .sidebar ul li a {
+        font-size: 16px;
+    }
+
+    /*Om Oss sidan*/
+    .info_saltafisken {
+        width: 90%;
+        max-width: 600px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main_nav ul li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .hamburger {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .product {
+        height: 300px;
     }
 }

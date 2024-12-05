@@ -4,18 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Saltafisken erbjuder exotiska fiskar, koraller och ryggradslösa djur för akvarieentusiaster.">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
     <title>Saltafisken | Startsidan</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
 
+        <header>
+            <!-- knapp för burgermeny mindre skärmar -->
+            <button class="hamburger" aria-label="Öppna/stäng navigationsmenyn">&#9776;</button>
+
+            <!-- Videobakgrund på indexsidan -->
             <video autoplay muted loop class="header_video">
                 <source src="videos/chromis.mp4" type="video/mp4">
                 Din webbläsare stödjer inte videouppspelning.
             </video>
+
+            <!-- Navigeringen -->
             <nav class="main_nav">
                 <ul>
                     <li><a href="index.html">Startsidan</a></li>
@@ -25,35 +34,49 @@
                 </ul>
             </nav>
         </header>
+
         <main>
+
             <h1>Välkommen till Saltafisken! </h1>
 
             <div class="index_content">
+
+                <!-- Vänstra kolumnen med text -->
                 <div class="left_column">
 
-                
-                    <section class="section_index">                        
-                        Vi är ett ledande företag inom import och försäljning av exotiska fiskar, koraller och ryggradslösa djur
+                    <section class="section_index">
+                        <h2>Din lokala fiskexpert</h2>
+                        Vi är ett ledande företag inom import och försäljning av exotiska fiskar, koraller och
+                        ryggradslösa djur
                         (invertebrater) för akvarieentusiaster.
                     </section>
 
+                    <!-- Länkar till produkterna -->
                     <section class="section_index">
+
                         <h2>Exotiska fiskar</h2>
-                        <a href="products.html"><img src="images/rostratus.jpg" alt=""></a><br><br>
-                        Utforska vårt breda utbud av fiskar från hela världen, från färgsprakande Chromis viridis till eleganta
+                        <a href="products.html"><img src="images/rostratus.jpg"
+                                alt="vit fisk med vertikala kopparband"></a><br><br>
+                        Utforska vårt breda utbud av fiskar från hela världen, från färgsprakande Chromis viridis till
+                        eleganta
                         Yellow Tangs. <br><br>
-        
+
                         <h2>Koraller</h2>
-                        <a href="products.html"><img src="images/acropora.jpg" alt=""></a><br><br>
+                        <a href="products.html"><img src="images/acropora.jpg" alt="blå lila korall"></a><br><br>
                         Vi erbjuder både LPS och SPS som tillför liv och färg till varje akvarium. Våra koraller
-                        importeras från ansvarsfulla källor för att säkerställa en hållbar framtid för revmiljöer.<br><br>
-        
+                        importeras från ansvarsfulla källor för att säkerställa en hållbar framtid för
+                        revmiljöer.<br><br>
+
                         <h2>Invertebrater (Inverts)</h2>
-                        <a href="products.html"><img src="images/lysmata.jpg" alt=""></a><br><br>
-                        Skapa en komplett undervattensmiljö med våra snäckor, räkor och sjöstjärnor. Dessa viktiga medarbetare
+                        <a href="products.html"><img src="images/lysmata.jpg"
+                                alt="röda och vita putsarräkor"></a><br><br>
+                        Skapa en komplett undervattensmiljö med våra snäckor, räkor och sjöstjärnor. Dessa viktiga
+                        medarbetare
                         håller ditt akvarium rent och balanserat.
                     </section>
-                </div>  
+                </div>
+
+                <!-- Högra kolumnen med länkar till nyheterna -->
                 <div class="right_column">
                     <h2>Nyheter!</h2>
                     <p>Klicka på rubriken för mer info.</p>
@@ -62,14 +85,16 @@
                         <a href="news.html#n2">Fiskarna från Hawaii-leveransen färdiga för köp</a><br>
                         <a href="news.html#n3">Koraller från Bali kom i veckan</a>
                     </div>
-                </div> 
-            </div>
+                </div>
 
-        
+            </div>
         </main>
+
+        <!-- Footer -->
         <footer>
             <p>&copy; 2024 Saltafisken<br>
-                Bilder från <a href="https://pixabay.com/sv//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3454404">Pixabay</a>
+                Bilder från <a
+                    href="https://pixabay.com/sv//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3454404">Pixabay</a>
             </p>
         </footer>
     </div>
