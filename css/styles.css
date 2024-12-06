@@ -295,7 +295,7 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
 }
 
 button.prev {
@@ -508,7 +508,7 @@ footer {
         top: 20px;
         right: 20px;
         font-size: 30px;
-        z-index: 3;
+        z-index: 1000;
         background: rgba(0, 0, 0, 0.5);
         border: none;
         color: white;
@@ -546,12 +546,13 @@ footer {
         background: #6ca0db;
         position: fixed;
         top: 0px;
-        left: 0;
+        left: 0px;
         width: 100%;
-        height: auto;
-        z-index: 4;
+        height: 100vh;
+        z-index: 999;
         padding: 50px 0;
         overflow-y: auto;
+        margin: 0;
     }
 
     header {
