@@ -295,15 +295,17 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 2;
 }
 
 button.prev {
     left: 10px;
+    z-index: 2;
 }
 
 button.next {
     right: 10px;
+    z-index: 2;
 }
 
 /*Om Oss sidan*/
