@@ -480,6 +480,10 @@ footer {
         padding-bottom: 30px;
     }
 
+    .info_form {
+        width: 98%;
+    }
+
     .info_form h4 {
         font-size: 20px;
     }
