@@ -31,7 +31,7 @@ categoryLinks.forEach(link =>{
     });
 });
 
-// Kontrollerar att elementen hittas
+// Toggla burgermenyn
 if (hamburger && navMenu) {
     
     // Lägger till klickhändelse för att toggla menyn
